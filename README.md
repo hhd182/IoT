@@ -14,7 +14,7 @@
 ### Clone
 
 ```bash
-$ npm clone https://github.com/Tu9L3/IOT.git
+$ npm clone https://github.com/hhd182/IoT.git
 ```
 
 ### Backend

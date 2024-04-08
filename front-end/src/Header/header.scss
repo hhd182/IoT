@@ -1,0 +1,10 @@
+.icon-profile {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    right: 10%;
+
+    &:hover .icon {
+        color: rgb(164, 164, 164);
+    }
+}

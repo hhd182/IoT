@@ -1,0 +1,21 @@
+.temp {
+    background-image: linear-gradient(to top right, #f7e9e9, #ff0000);
+}
+
+.hum {
+    background-image: linear-gradient(to top right, #d6d5fd, #0015ff);
+}
+
+.light {
+    background-image: linear-gradient(to top right, #fafdeb, #f1ff27);
+
+}
+
+.chart-container,
+.button-container {
+    max-height: calc(100vh - 144px);
+}
+
+.recharts-legend-wrapper {
+    top: -0.5rem !important;
+}

@@ -1,0 +1,33 @@
+.ant-table-wrapper .ant-table-container table>thead>tr {
+    &:first-child>*:first-child {
+        border-start-start-radius: #e5e7eb;
+    }
+
+    &:first-child>*:last-child {
+        border-start-end-radius: #e5e7eb;
+    }
+}
+
+.datasensor-container {
+    min-height: calc(100vh - 70px);
+}
+
+.ant-tree-select-dropdown {
+    .ant-select-tree {
+        .ant-select-tree-switcher {
+            width: 0px !important;
+        }
+    }
+
+    .ant-select-tree-list-holder-inner {
+        text-align: center !important;
+    }
+
+    .ant-select-tree-node-content-wrapper {
+        line-height: 30px !important;
+    }
+}
+
+.ant-table-thead {
+    background-color: #333 !important;
+}

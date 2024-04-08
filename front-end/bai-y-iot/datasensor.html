@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Sensor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="header text-center box-shadow row container" style="margin-left: 0px;">
+        <div class="item-header">
+            <a class="title-item" href="./index.html">Doash Board</a>
+        </div>
+        <div class="item-header page-active">
+            <a class="title-item " href="./datasensor.html">Data Sensor</a>
+        </div>
+        <div class="item-header">
+            <a class="title-item" href="./actionhistory.html">Action History</a>
+        </div>
+        <div class="icon-profile">
+            <a href="./profile.html">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="container pt-3 box-shadow">
+        <div class="search-container pl-4 row height-center">
+            <input type="text" placeholder="Search">
+            <div class="icon-search height-center">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="sort-item height-center">
+                <p>All</p>
+                <i class="fa-solid fa-chevron-down"></i>
+                <ul class="item">
+                    <li>Nhiệt độ A->Z</li>
+                    <li>Độ ẩm A->Z</li>
+                    <li>Ánh sáng A->Z</li>
+                </ul>
+            </div>
+        </div>
+        <table class="text-center mt-3">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Nhiệt độ</td>
+                    <td>Độ ẩm</td>
+                    <td>Ánh sáng</td>
+                    <td>Thời gian</td>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>50</td>
+                    <td>67</td>
+                    <td>60</td>
+                    <td>2024/02/19 13:06:02</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>40</td>
+                    <td>82</td>
+                    <td>50</td>
+                    <td>2024/02/19 13:06:02</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>45</td>
+                    <td>90</td>
+                    <td>120</td>
+                    <td>2024/02/19 13:06:02</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>60</td>
+                    <td>80</td>
+                    <td>90</td>
+                    <td>2024/02/19 13:06:02</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>68</td>
+                    <td>56</td>
+                    <td>210</td>
+                    <td>2024/02/19 13:06:02</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>91</td>
+                    <td>44</td>
+                    <td>195</td>
+                    <td>2024/02/19 13:06:02</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>98</td>
+                    <td>65</td>
+                    <td>176</td>
+                    <td>2024/02/19 13:06:02</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>120</td>
+                    <td>75</td>
+                    <td>56</td>
+                    <td>2024/02/19 13:06:02</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>135</td>
+                    <td>92</td>
+                    <td>145</td>
+                    <td>2024/02/19 13:06:02</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>145</td>
+                    <td>100</td>
+                    <td>165</td>
+                    <td>2024/02/19 13:06:02</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="page row height-center text-center">
+            <i class="fa-solid fa-chevron-left"></i>
+            <p style="background-color: gray;">1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>...</p>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/1e40a0bb55.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

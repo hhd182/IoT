@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doash Board</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="header text-center box-shadow row container" style="margin-left: 0px;">
+        <div class="item-header page-active ">
+            <a class="title-item" href="./index.html">Doash Board</a>
+        </div>
+        <div class="item-header">
+            <a class="title-item" href="./datasensor.html">Data Sensor</a>
+        </div>
+        <div class="item-header">
+            <a class="title-item" href="./actionhistory.html">Action History</a>
+        </div>
+        <div class="icon-profile">
+            <a href="./profile.html">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="container text-center pt-3">
+        <div class="row">
+            <div class="col col-1-3">
+                <div id="temp-container" class="temp box-shadow row-1-3 br-2 height-center fl-column">
+                    <i class="fa-solid fa-temperature-low icon"></i>
+                    <p class="title" style=" margin-right:20px">
+                        <span id="nhietdo">30</span>
+                        <span>℃</span>
+                    </p>
+                </div>
+            </div>
+            <div class=" col col-1-3">
+                <div id="hum-container" class="hum box-shadow row-1-3 br-2 height-center fl-column">
+                    <i class="fa-solid fa-droplet icon"></i>
+                    <p class="title">
+                        <span id="doam">30</span>
+                        <span>%</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col col-1-3">
+                <div id="light-container" class="light box-shadow row-1-3 br-2 height-center fl-column">
+                    <i class="fa-regular fa-lightbulb icon"></i>
+                    <p class="title">
+                        <span id="anhsang">30</span>
+                        <span>Lux</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-3">
+            <div class="col col-2-3">
+                <div class=" box-shadow row-2-3">
+                    <div class="chart-container height-center">
+                        <canvas id="chart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-1-3">
+                <div class="d-button box-shadow row-1-3 br-2 height-center fl-column">
+                    <img id="fan-img" class="icon-gif" src="./img/fan-image.png" alt="">
+                    <div class="my-button">
+                        <button onclick="onFan()" class="btn btn-on br-2" id="fan-on">On</button>
+                        <button onclick="offFan()" class="btn btn-off br-2" id="fan-off">Off</button>
+                    </div>
+                </div>
+                <div class="d-button box-shadow row-1-3 br-2 height-center fl-column" style="margin-top: 15px;">
+                    <img id="flashlight-img" class="icon-gif" src="./img/flashlight-image.png" alt="">
+                    <div class="my-button">
+                        <button onclick="onFlash()" class="btn btn-on br-2" id="flash-on">On</button>
+                        <button onclick="offFlash()" class="btn btn-off br-2" id="flash-off">Off</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script/main.js"></script>
+    <script src="https://kit.fontawesome.com/1e40a0bb55.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

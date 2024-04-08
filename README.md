@@ -35,7 +35,7 @@ DATABASE_URL = 'your host'
 ---
 ### Running
 ```bash
-$ npm run start:dev
+$ node app.js
 ```
 Terminal
 ![img_3.png](img_3.png)

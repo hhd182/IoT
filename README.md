@@ -22,22 +22,14 @@ $ npm clone https://github.com/hhd182/IoT.git
 ---
 ### Installation
 ```bash
-$ cd be
+$ cd back-end
 $ npm i
 ```
 ---
 ### Config
 Create file `.env` from `.env.example`
 ```
-DB_HOST = 'your host'
-DB_PORT = 'your port'
-DB_USERNAME = 'your username'
-DB_PASSWORD = 'your password'
-DB_DATABASE = 'your database'
-
-MQTT_USERNAME = 'your broker username'
-MQTT_PASSWORD = 'your broker password'
-MQTT_URL = 'your broker url'
+DATABASE_URL = 'your host'
 ```
 
 ---
